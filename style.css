@@ -1,0 +1,228 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0cm;
+    padding: 0cm;
+}
+body{
+    background-color: var(--Violet);
+    background-image: url(image/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 85%;
+}
+#logo{
+    margin-top: 1cm;
+    margin-left: 2cm;
+}
+#principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3cm;
+    margin-left: 2cm;
+}
+#illust{
+    width: 48%;
+}
+#principal-text{
+    margin-left: 1.5cm;
+    margin-top: 1cm;
+}
+#title{
+    font-family: Poppins;
+    color: #fff;
+    font-size: 1.4cm;
+    line-height: 2cm;
+}
+#desc{
+    margin-top: 1cm;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 0.63cm;
+}
+#button{
+    margin-top: 0.7cm;
+    border-style: none;
+    width: 7cm;
+    height: 1.7cm;
+    border-radius: 2cm;
+    color: var(--Violet);
+    font-size: 0.55cm;
+    box-shadow: hsl(257, 42%, 36%) 5px 7px 15px 0px;
+    transition: 0.3s;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+#social-network{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5cm;
+}
+.fa-facebook-f{
+    display: flex;
+    padding: 0.3cm;
+    padding-left: 0.4cm;
+    padding-right: 0.4cm;
+    border: 1px solid #fff;
+    border-radius: 1cm;
+    color: #fff;
+    margin-right: 0.4cm;
+    transition: 0.3s;
+}
+.fa-facebook-f:hover{
+    cursor: pointer;
+    border: 1px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+.fa-twitter{
+    display: flex;
+    padding: 0.3cm;
+    border: 1px solid #fff;
+    border-radius: 1cm;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 0.4cm;
+    transition: 0.3s;
+}
+.fa-twitter:hover{
+    cursor: pointer;
+    border: 1px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+.fa-instagram{
+    display: flex;
+    padding: 0.3cm;
+    padding-right: 0.35cm;
+    padding-left:0.35cm;
+    border: 1px solid #fff;
+    border-radius: 1cm;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s;
+}
+.fa-instagram:hover{
+    cursor: pointer;
+    border: 1px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+.br2{
+    display: none;
+}
+@media screen and (max-width : 625px) {
+    body{
+        background-color: var(--Violet);
+        background-image: url(image/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #logo{
+        margin-top: 1cm;
+        margin-left: 1cm;
+        width: 5cm;
+    }
+    #principal{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1cm;
+        margin-left: 0cm;
+    }
+    #illust{
+        margin-left: 0.5cm;
+        width: 90%;
+    }
+    #principal-text{
+        margin-left: 0cm;
+        margin-top: 1cm;
+        text-align: center;
+    }
+    #title{
+        font-family: Poppins;
+        color: #fff;
+        font-size: 0.8cm;
+        line-height: 1.1cm;
+    }
+    #desc{
+        margin-top: 0.5cm;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 0.5cm;
+    }
+    #button{
+        margin-top: 0.7cm;
+        border-style: none;
+        width: 6cm;
+        height: 1.2cm;
+        border-radius: 2cm;
+        color: var(--Violet);
+        font-size: 0.4cm;
+        box-shadow: hsl(257, 42%, 36%) 5px 7px 15px 0px;
+        transition: 0.3s;
+    }
+    #button:hover{
+        cursor: pointer;
+        background-color: var(--Soft-Magenta);
+        color: #fff;
+    }
+    #social-network{
+        display: flex;
+        justify-content: center;
+        margin-right: 0cm;
+        margin-top: 2cm;
+    }
+    .fa-facebook-f{
+        display: flex;
+        padding: 0.3cm;
+        padding-left: 0.4cm;
+        padding-right: 0.4cm;
+        border: 1px solid #fff;
+        border-radius: 1cm;
+        color: #fff;
+        margin-right: 0.4cm;
+        transition: 0.3s;
+    }
+    .fa-facebook-f:hover{
+        cursor: pointer;
+        border: 1px solid var(--Soft-Magenta);
+        color: var(--Soft-Magenta);
+    }
+    .fa-twitter{
+        display: flex;
+        padding: 0.3cm;
+        border: 1px solid #fff;
+        border-radius: 1cm;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-right: 0.4cm;
+        transition: 0.3s;
+    }
+    .fa-twitter:hover{
+        cursor: pointer;
+        border: 1px solid var(--Soft-Magenta);
+        color: var(--Soft-Magenta);
+    }
+    .fa-instagram{
+        display: flex;
+        padding: 0.3cm;
+        padding-right: 0.35cm;
+        padding-left:0.35cm;
+        border: 1px solid #fff;
+        border-radius: 1cm;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: 0.3s;
+    }
+    .br1{
+        display: none;
+    }
+    .br2{
+        display: flex;
+    }
+}
